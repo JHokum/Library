@@ -154,7 +154,7 @@ button.addEventListener("click",buttonFunction);
 const removeFunction = function(e){
     const index = e.target.getAttribute("data-row");
     // alert(`The index of this thingy is ${index}`)
-    const rowForDeletion = document.querySelector(`tr[data-row=${index}`)
+    const rowForDeletion = document.querySelector(`tr[data-row=${index}]`)
   
     rowForDeletion.remove();
     const found = myLibrary.books.findIndex(element=>element.identifier=e.target.getAttribute("data-row"));
